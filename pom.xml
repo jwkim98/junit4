@@ -485,16 +485,16 @@
                         </executions>
                     </plugin>
 
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>cobertura-maven-plugin</artifactId>
-                        <version>2.7</version>
-                        <configuration>
-                            <formats>
-                                <format>xml</format>
-                            </formats>
-                        </configuration>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.codehaus.mojo</groupId>-->
+<!--                        <artifactId>cobertura-maven-plugin</artifactId>-->
+<!--                        <version>2.7</version>-->
+<!--                        <configuration>-->
+<!--                            <formats>-->
+<!--                                <format>xml</format>-->
+<!--                            </formats>-->
+<!--                        </configuration>-->
+<!--                    </plugin>-->
 
                     <plugin>
                         <groupId>org.jacoco</groupId>
@@ -648,7 +648,19 @@
                         <artifactId>maven-surefire-report-plugin</artifactId>
                         <version>3.0.0-M3</version>
                     </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>cobertura-maven-plugin</artifactId>
+                        <version>2.7</version>
+                        <configuration>
+                            <formats>
+                                <format>xml</format>
+                            </formats>
+                        </configuration>
+                    </plugin>
                 </plugins>
+
+
             </reporting>
 
 
